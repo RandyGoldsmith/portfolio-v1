@@ -1,28 +1,76 @@
-<DOCTYPE! html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Randys Portfolio</title>
+    <title>Portfolio | Randy Goldsmith</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="main.js"></script>
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Projects</li>
-                <li>Contact</li>
+            <ul class="navbar">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                
+                <a href="#"><li>Projects</li></a>
+                <a href="#"><li>Contact</li></a>
             </ul>
         </nav>
+        
+        </div>
     </header>
+
     <main>
-        <h1>Randy Goldsmith</h1>
-        <h3>Front-End Web Developer</h3>
+        <section id="showcase">
+            <div class="container">
+                <h1>Randy Goldsmith</h1>
+                <p>Front-End Web Developer</p>
+            </div>    
+        </section>
+
+        <section id="about">
+            <div class="about-top">
+                <h2>About me</h2>
+                <img src="#">
+            </div>
+            <div class="about-middle">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+            <div class="about-bottom">
+                <h3>My Superpowers</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Et netus et malesuada fames ac turpis egestas sed tempus.
+                </p>
+                <i class="#">HTML5</i>
+                <i class="#">CSS3</i>
+                <i class="#">JavaScript</i>
+                <i class="#">React</i>
+                <i class="#">NodeJS</i>
+
+            </div>
+        </section>
+
+        <section id="projects">
+            <h3>Projects</h3>
+        </section>
+
+        <section id="contact">
+            <h3>Contact</h3>
+        </section>
     </main>
-    
+    <footer>
+        <p>Copyright &copy 2019 Randy Goldsmith. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
