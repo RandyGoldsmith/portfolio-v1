@@ -1,9 +1,21 @@
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+#showcase {
+    background-image: url('../imgs/johannes-ludwig-8dejZGw3Hec-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .navbar {
     display: flex;
@@ -12,14 +24,63 @@
 
 .navbar li {
     list-style: none;
-    margin: 1.5em 1.2em;
-    
+    margin: 0.5em 0.9em;
 }
 
 .navbar a {
     text-decoration: none;
+    color: #FFF;
+    text-shadow: 1px 1px black;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
 }
 
 .navbar a:hover {
-    color: #3987c9;
+    border-bottom: 2px solid #4169e1;
+    padding: 0.2rem;
 }
+
+.top-left {
+    position: fixed;
+    width: 100%;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.intro-text {
+    color: #FFF;
+}
+
+.intro-text h1 {
+    font-size: 3.5rem;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 1.5rem;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+}
+
+.intro-text p {
+    text-align: center;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+    text-shadow: 2px 2px black;
+}
+
+#about {
+    text-align: center;
+}
+
+.about-top {
+    margin-top: 10rem;
+}
+
+
+.icons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
