@@ -1,7 +1,10 @@
+
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 #showcase {
@@ -21,6 +24,16 @@ body {
     display: flex;
     justify-content: flex-end;
 }
+
+.stripe-navbar {
+    background-color: black;
+    opacity: 0.6;
+    top: 0;
+    width: 100%;
+    position: fixed;
+}
+
+
 
 .navbar li {
     list-style: none;
@@ -76,10 +89,111 @@ body {
     margin-top: 10rem;
 }
 
+.about-top h2 {
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+}
+
+.about-middle p {
+    font-family: 'Doris', sans-serif;
+    margin: 2.5rem;
+    line-height: 1.5rem;
+    color: #333333;
+}
+
+.about-bottom h3 {
+    font-family: 'Doris', sans-serif;
+    text-transform: uppercase;
+    margin: 2.5rem;
+}
 
 .icons {
     display: flex;
     justify-content: space-evenly;
+    margin-top: 2.75rem;
+}
+
+.smile-face {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+}
+
+#projects {
+    margin-top: 4rem;
+}
+
+#contact {
+    margin-top: 4rem;
+    background-color: yellow;
+}
+
+footer {
+    background-color: lightslategray;
+    padding: 10px;
+}
+
+
+
+.social-links ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links li {
+    list-style: none;
+   
+}
+
+.social-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.card-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card-container {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    margin: 0 10px;
+}
+
+.card-container:hover .card{
+    transform: rotateY(180deg);
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+}
+
+.front {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    backface-visibility: hidden;
+    color: red;
+    text-align: center;
+}
+
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    backface-visibility: hidden;
+    color: #fff;
+    text-align: center;
+    transform: rotateY(180deg);
 }
 
 
