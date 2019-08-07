@@ -6,6 +6,7 @@
     <title>Portfolio | Randy Goldsmith</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <script src="https://kit.fontawesome.com/026a936e20.js"></script>
     
@@ -15,7 +16,7 @@
             <nav id="myHeader" class="top-left">
                 <ul class="navbar">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#top">Home</a>
                     </li>
                     <li>
                         <a href="#about">About</a>
@@ -47,21 +48,31 @@
             </div>
             <div class="about-bottom">
                 <h3>My Superpowers</h3>
-                <p>I specialize in the Front-End but I am also learning NodeJS, Express, and MongoDB
+                <p>I specialize in the Front-End but I am also learning and building projects with React, NodeJS, Express, and MongoDB
                 </p>
-            <div class="icons">
-                <i class="fab fa-html5 fa-10x"></i>
-                <i class="fab fa-css3-alt fa-10x"></i>
-                <i class="fab fa-js-square fa-10x"></i>
-                <i class="fab fa-react fa-10x"></i>
-                <i class="fab fa-node-js fa-10x"></i>
+            <div data-aos="fade-up" class="icons">
+                <div class="html-icon">
+                    <i class="fab fa-html5 fa-10x"></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="css3-icon">
+                    <i class="fab fa-css3-alt fa-10x"></i>
+                    <p>CSS3</p>
+                </div>
+                <div class="js-icon">
+                    <i class="fab fa-js-square fa-10x"></i>
+                    <p>JavaScript</p>
+                </div>
             </div>
 
             </div>
         </section>
 
+        <hr/>
+
         <section id="projects">
-            <h3>Projects</h3>
+            <h2>Projects</h2>
+            <p>Under Construction...</p>
             <div class="card-row">
                 <div class="card-container">
                     <div class="card">
@@ -98,8 +109,10 @@
             </div>
         </section>
 
+        <hr/>
+
         <section id="contact">
-            <h3>Contact</h3>
+            <h2>Contact</h2>
         </section>
     </main>
     <footer>
@@ -116,5 +129,7 @@
         <p>Copyright &copy 2019 Randy Goldsmith. All Rights Reserved.</p>
     </footer>
 <script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script> AOS.init({duration: 1000, once: true});</script>
 </body>
 </html>

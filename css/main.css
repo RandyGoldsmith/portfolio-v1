@@ -112,12 +112,31 @@ body {
     margin: 2.5rem;
 }
 
-
+.about-bottom p {
+    font-size: 17px;
+    letter-spacing: 0.1rem;
+}
 
 .icons {
     display: flex;
     justify-content: space-evenly;
     margin-top: 2.75rem;
+}
+
+.fa-html5 {
+    color: #e44d26;
+}
+
+.fa-css3-alt {
+    color: #1471b6;
+}
+
+.fa-js-square {
+    color: #f0da4f;
+}
+
+.html-icon .p {
+    padding-top: 0;
 }
 
 .smile-face {
@@ -127,20 +146,26 @@ body {
 }
 
 #projects {
-    margin-top: 4rem;
+    margin-top: 75px;
 }
 
 #contact {
     margin-top: 4rem;
-    background-color: yellow;
 }
 
 footer {
-    background-color: lightslategray;
+    background-color: black;
     padding: 10px;
 }
 
+footer p {
+    color: white;
+}
 
+hr {
+    width: 33%;
+    margin-top: 6rem;
+}
 
 .social-links ul {
     display: flex;
@@ -149,12 +174,17 @@ footer {
 }
 .social-links li {
     list-style: none;
-   
+    margin-right: 1.5rem;
 }
 
 .social-links li a {
     text-decoration: none;
     color: black;
+}
+
+.fa-linkedin,
+.fa-github {
+    color: white;
 }
 
 .card-row {
@@ -182,6 +212,10 @@ footer {
     transition: transform 0.9s;
 }
 
+.card-row {
+    margin-top: 4rem;
+}
+
 .front {
     position: absolute;
     width: 100%;
@@ -201,6 +235,22 @@ footer {
     color: #fff;
     text-align: center;
     transform: rotateY(180deg);
+}
+
+@media only screen and (max-width: 480px) {
+    .card-row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-container {
+        margin-bottom: 30px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
 }
 
 
