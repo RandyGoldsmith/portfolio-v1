@@ -113,6 +113,27 @@
 
         <section id="contact">
             <h2>Contact</h2>
+              <div class="form-container"> 
+            <form action = "/randy" method="POST">
+                <ul class="flex-outer"> 
+                <li>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                    <label for="mail">Email:</label>
+                    <input type="email" id="email" name="user_mail">
+                </li>
+                <li>
+                    <label for="msg">Message:</label>
+                    <textarea rows="6" id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Send</button>
+                </li>
+                </ul>
+            </form>
+             </div> 
         </section>
     </main>
     <footer>
