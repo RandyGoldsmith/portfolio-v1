@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Portfolio | Randy Goldsmith</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
@@ -113,27 +114,35 @@
 
         <section id="contact">
             <h2>Contact</h2>
-              <div class="form-container"> 
-            <form action = "/randy" method="POST">
-                <ul class="flex-outer"> 
-                <li>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                    <label for="mail">Email:</label>
-                    <input type="email" id="email" name="user_mail">
-                </li>
-                <li>
-                    <label for="msg">Message:</label>
-                    <textarea rows="6" id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Send</button>
-                </li>
-                </ul>
+            
+            
+            
+            <form action="/goldsmith" method="post">
+                <div class="form-group row">
+                    <label for="name" class="col-sm-4 col-form-label">Name:</label>
+                    <div class="col-sm-4">
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="email" class="col-sm-4 col-form-label">Email:</label>
+                    <div class="col-sm-4">
+                        <input type="email" class="form-control" id="last_name" name="last_name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="message" class="col-sm-4 col-form-label">Message:</label>
+                    <div class="col-sm-4">
+                        <textarea class="form-control" rows="5" cols="40"></textarea>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="offset-4 col-sm-4">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
             </form>
-             </div> 
+            
         </section>
     </main>
     <footer>
