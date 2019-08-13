@@ -1,12 +1,9 @@
-html {
-    font-size: calc(0.5em + 1vw);
-}
+
 
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-align: center;
     font-family: 'Dosis', sans-serif;
 }
 
@@ -145,6 +142,24 @@ body {
     margin-top: 75px;
 }
 
+#projects > p {
+    text-align: center;
+}
+
+#projects h2,
+#contact h2 {
+    text-align: center;
+}
+
+#contact {
+    margin-bottom: 75px;
+}
+
+.main-form {
+    max-width: 726px;
+    margin: 0 auto;
+}
+
 #contact h2 {
     margin-bottom: 1.5rem;
 }
@@ -162,6 +177,7 @@ footer {
 
 footer p {
     color: white;
+    text-align: center;
 }
 
 hr {
