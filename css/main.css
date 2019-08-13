@@ -1,5 +1,4 @@
 
-
 body {
     margin: 0;
     padding: 0;
@@ -71,16 +70,18 @@ body {
 }
 
 .intro-text h1 {
-    font-size: 1.5em;
+    font-size: 36px;
     text-align: center;
-    letter-spacing: 1.5rem;
+    letter-spacing: 32px;
     text-shadow: 2px 2px black;
     text-transform: uppercase;
+    margin: 1.5rem 0;
 }
 
 .intro-text p {
+    font-size: 20px;
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: 8px;
     text-shadow: 2px 2px black;
 }
 
@@ -213,7 +214,7 @@ hr {
 .card-container {
     perspective: 1000px;
     width: 300px;
-    height: 200px;
+    height: 300px;
     margin: 0 10px;
 }
 
@@ -244,6 +245,11 @@ hr {
     text-align: center;
 }
 
+.front img {
+    width: 100%;
+    height: 80%;
+}
+
 .back {
     position: absolute;
     width: 100%;
@@ -254,13 +260,37 @@ hr {
     transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 990px) {
+    .card-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .intro-text h1 {
+        letter-spacing: 25px;
+    }
+}
+
+
+
+@media only screen and (max-width: 720px) {
+    .intro-text h1 {
+        font-size: 33px;
+        letter-spacing: 20px; 
+    }
+}
+
+@media only screen and (max-width: 590px) {
     .card-row,
     .icons {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+
 
     .card-container {
         margin-bottom: 30px;
@@ -274,11 +304,28 @@ hr {
         text-align: left;
     }
 
-    .left-align-btn {
-        display: flex;
-        justify-content: flex-start;
+    .intro-text h1 {
+        letter-spacing: 15px;
+        font-size: 31px;
     }
+
+    .intro-text p {
+        font-size: 17px;
+        letter-spacing: 6px;
+    }
+
 }
 
 
 
+@media only screen and (max-width: 520px) {
+    .intro-text h1 {
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+
+    .intro-text p {
+        font-size: 15px;
+        letter-spacing: 5px;
+    }
+}
