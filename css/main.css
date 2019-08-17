@@ -207,17 +207,21 @@ hr {
 }
 
 .card-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    max-width: 1260px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-items: center;
+    grid-gap: 20px;
 }
+
+
 
 .card-container {
     perspective: 1000px;
     width: 300px;
     height: 300px;
     margin: 0 10px;
-    text-align: center;
 }
 
 .card-container:hover .custom-card{
@@ -262,13 +266,6 @@ hr {
     transform: rotateY(180deg);
 }
 
-@media only screen and (max-width: 990px) {
-    .card-row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
-}
 
 @media only screen and (max-width: 900px) {
     .intro-text h1 {
@@ -285,8 +282,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 590px) {
-    .card-row,
+@media only screen and (max-width: 653px) {
     .icons {
         display: flex;
         flex-direction: column;
