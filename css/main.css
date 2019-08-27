@@ -327,3 +327,10 @@ hr {
         letter-spacing: 5px;
     }
 }
+
+@media only screen and (min-width: 375px) {
+    #showcase {
+        height: auto;
+        width: 100vw;
+    }
+}
