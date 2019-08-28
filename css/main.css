@@ -7,11 +7,8 @@ body {
 }
 
 #showcase {
-    background-image: url('../imgs/johannes-ludwig-8dejZGw3Hec-unsplash.jpg');
+    background-image: url('../imgs/johannes-ludwig-8dejZGw3Hec-unsplash.jpg') no-repeat center center fixed;
     background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -328,18 +325,6 @@ hr {
     }
 }
 
-@media (max-width: 480px) {
-    #showcase {
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    }
+
 
     
-}
