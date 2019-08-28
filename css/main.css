@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    object-fit: contain;
 }
 
 .navbar {
