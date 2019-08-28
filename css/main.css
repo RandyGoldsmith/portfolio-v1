@@ -7,8 +7,11 @@ body {
 }
 
 #showcase {
-    background-image: url('../imgs/johannes-ludwig-8dejZGw3Hec-unsplash.jpg') no-repeat center center fixed;
+    background-image: url('../imgs/johannes-ludwig-8dejZGw3Hec-unsplash.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     height: 100vh;
     display: flex;
     flex-direction: column;
